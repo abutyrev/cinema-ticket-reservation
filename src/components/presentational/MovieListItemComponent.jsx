@@ -1,14 +1,7 @@
 import React from "react";
-import { Link } from 'react-router-dom';
+import { Link } from "react-router-dom";
 
-function MovieListItemComponent({
-  id,
-  name,
-  format,
-  ageLimit,
-  price,
-  handleClick
-}) {
+function MovieListItemComponent({ id, name, format, ageLimit, price }) {
   return (
     <tr>
       <td>{name}</td>
@@ -16,7 +9,9 @@ function MovieListItemComponent({
       <td>{ageLimit}+</td>
       <td>{price}</td>
       <td>
-        <Link to={`/cinemahall/${id}`}  className="btn btn-primary">Tickets</Link>
+        <Link to={`/cinemahall/${id}`} className="btn btn-primary">
+          Tickets
+        </Link>
       </td>
     </tr>
   );

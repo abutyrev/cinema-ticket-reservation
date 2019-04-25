@@ -1,13 +1,25 @@
-
 .cinema-hall {
-    position: relative;
-    width: 100%;
-    height: 600px;
-    background-color:  #343a40;
+  position: relative;
+  width: 100%;
+  height: 600px;
+  background-color: #343a40;
 }
 
 .cinema-hall-back-btn {
-    position: relative;
-    top: 4px;
-    left: 4px;
+  position: relative;
+  top: 4px;
+  left: 4px;
+}
+
+.cinema-hall-seats {
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 10px;
+}
+
+.cinema-hall-seat {
+  margin: 10px 40px;
 }
