@@ -15,8 +15,9 @@ class CinemaHallContainer extends Component {
     this.cancelBtnClickHandler = this.cancelBtnClickHandler.bind(this);
   }
 
-  static getDerivedStateFromProps(props) {
-    if (!props.movie) props.history.push("/");
+  componentWillMount() {
+    if (!this.props.movie)
+      this.props.history.push("/");
   }
 
   backBtnClickHandler() {
